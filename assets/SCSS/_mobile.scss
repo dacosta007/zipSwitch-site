@@ -1,0 +1,21 @@
+// Wildscreen Devices
+@include mediaXl {
+
+}
+
+// Desktop & Laptop Devices
+@include mediaLg {
+  
+}
+
+// Tablet & Small Devices
+@include mediaMd {
+  
+}
+
+// Smartphone Devices
+@include mediaSm {
+  .section {
+    padding: 1rem 1rem;
+  }
+}

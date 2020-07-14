@@ -1,0 +1,28 @@
+/* containers */
+.section {
+  position: relative;
+  padding: 1rem 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+/* containers ends */
+
+/* grid columns */
+.two-grid-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.three-grid-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.four-grid-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* grid columns ends */

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Home Page | ZIP Switch Device Prototype</title>
+  <link rel="stylesheet" href="/assets/css/themify-icons.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <header class="">
+    <nav class="navbar">
+      <!-- site navigation brand -->
+      <div class="navbar-brand">
+        <a href="#/">
+          <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest">
+        </a>
+        <span class="">IOI</span>
+      </div>
+      <!-- right nav menu -->
+      <div class="navbar-right">
+        <a href="#/">home</a>
+        <a href="#/pages/docs.html">DOCS</a>
+        <a href="#/pages/author.html">author</a>
+        <a href="#/pages/contact.html">contact us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- First section (callout texts and device slide display) -->
+  <section class="section">
+    <!-- callout text about device and sub-title text -->
+    <div class="callout-text"></div>
+
+    <!-- device image slide -->
+    <div class="device-img-slide"></div>
+  </section>
+
+  <!-- Second section (gives brief & short importance of the device) -->
+  <section class="section">
+    <!-- section insightful title heading -->
+    <div class="section-title">
+      <h2 class="">main section title</h2>
+      <h3 class="">section sub-title</h3>
+    </div>
+
+    <div class="flex-container">
+      <!-- device image with scroll control & can be clicked to preview in a modal -->
+      <!-- (NOTE: Should be hiding on small hand-held devices) -->
+      <div class="device-img-slide-preview-container">
+        <img src="#" alt="device_img_1" />
+        <img src="#" alt="device_img_2" />
+        <img src="#" alt="device_img_3" />
+        <img src="#" alt="device_img_4" />
+      </div>
+
+      <!-- device economic highlighted importances -->
+      <div class="brief-importance-container">
+        <div class="highlighted-importance">
+          <!-- highlighted icon -->
+          <i class="ti ti-lock"></i>
+          <!-- breif highlighted title & text -->
+          <div>
+            <h4 class="title">importance title one</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+              voluptate.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlighted-importance">
+          <!-- highlighted icon -->
+          <i class="ti ti-shield"></i>
+          <!-- breif highlighted title & text -->
+          <div>
+            <h4 class="title">importance title two</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+              voluptate.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlighted-importance">
+          <!-- highlighted icon -->
+          <i class="ti ti-layers"></i>
+          <!-- breif highlighted title & text -->
+          <div>
+            <h4 class="title">importance title three</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+              voluptate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- call-to-action(C.T.A) btns to preview images, & to read more about the device -->
+    <!-- (NOTE: To only be displayed on hand-held or mobile devices) -->
+    <div class="flex-container cta-btn-container">
+      <!-- btn to display images slide in a modal window -->
+      <button class="btn btn-default" id="previewImgSlide">
+        preview image
+      </button>
+
+      <!-- btn to read more about device in the documentation page -->
+      <a href="#/pages/docs.html" class="btn read-more-btn">read more</a>
+    </div>
+  </section>
+
+  <!-- Third section (help emphasis on: about the device, & designer/engineer of the device) -->
+  <section class="section">
+    <!-- section insightful title heading -->
+    <div class="section-title">
+      <h2 class="">Main section Title</h2>
+      <h3 class="">section sub-title</h3>
+    </div>
+
+    <div class="flex-container">
+      <!-- A breif introductory text about the device -->
+      <div class="">
+        <h4 class="title">about device</h4>
+        <p class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          nesciunt magnam illum obcaecati harum maiores recusandae incidunt,
+          magni maxime nostrum laboriosam sed quo aspernatur, molestiae autem
+          debitis, perferendis reiciendis inventore?
+        </p>
+
+        <!-- C.T.A btn to read more about the device -->
+        <div>
+          <a href="#/pages/docs.html" class="btn read-more-btn">read more</a>
+        </div>
+      </div>
+
+      <!-- An image and little insight about the device designer/engineer -->
+      <div class="center-text">
+        <!-- device engineer/designer's img -->
+        <img src="#" alt="author/designer/engineer_pic" width="50px" height="auto" class="authors-img" />
+
+        <!-- device engineer/designer's fullname -->
+        <h4 class="title">onoja A. henry</h4>
+        <h5 class="sub-title">physist</h5>
+
+        <!-- social media links -->
+        <div class="social-media-link-container">
+          <a href="#/https/facebook.com/onoja" class="social-link facebook-link">
+            <i class="ti-ti-facebook"></i>
+          </a>
+          <a href="#https/twitter.com/onoja" class="social-link twitter-link">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="#https/instagram.com/onoja" class="social-link instagram-link">
+            <i class="ti ti-instagran"></i>
+          </a>
+          <a href="#https/linkedin.com/onoja" class="social-link linkedin-link">
+            <i class="ti ti-linkedin"></i>
+          </a>
+        </div>
+
+        <!-- C.T.A btn to read more about the engineer/designer on authors page -->
+        <a href="#/pages/author.html" class="btn read-more-btn">read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fourth section (help make interested vistors make donations or sponsor the project and also subscribe to newsletters ) -->
+  <section class="section">
+    <!-- section insightful title heading -->
+    <div class="section-title">
+      <h2 class="">Main section Title</h2>
+      <h3 class="">section sub-title</h3>
+    </div>
+
+    <div class="flex-container">
+      <!-- section for newsletter subscription by insterested visitors -->
+      <div>
+        <h4 class="title">join out newsletter</h4>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ab? Cupiditate itaque corporis praesentium.
+        </p>
+        <!-- accept visitor's email for newsletter subscription -->
+        <div class="newsletter-input-field">
+          <input type="email" id="newsletter" placeholder="Your Email Address">
+          <button type="button" class="btn btn-subscribe" id="subscribe">
+            subscribe
+          </button>
+        </div>
+      </div>
+
+      <!-- section for interested visitors to make donations/sponsor to the project -->
+      <div>
+        <h4 class="title">Want to support the project?</h4>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo porro quisquam, iusto quae inventore!
+        </p>
+        <!-- give diff links avialable to visitors in making donation/sponsorship easier -->
+        <div class="grid-container">
+          <!-- paypal donation link -->
+          <a href="#https://paypal.com/donation" class="donation-link">
+            <!-- donation img link -->
+            <img src="#" alt="paypal_donation_link_img">
+            <!-- donation img title -->
+            <h5 class="sub-title">paypal</h5>
+          </a>
+          <!-- patreon donation link -->
+          <a href="#https://patreon.com/donation" class="donation-link">
+            <!-- donation img link -->
+            <img src="#" alt="patreon_donation_link_img">
+            <!-- donation img title -->
+            <h5 class="sub-title">patreon</h5>
+          </a>
+          <!-- flutterwave donation link -->
+          <a href="#https://flutterwave.com/donation" class="donation-link">
+            <!-- donation img link -->
+            <img src="#" alt="flutterwave_donation_link_img">
+            <!-- donation img title -->
+            <h5 class="sub-title">flutterwave</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section of the page -->
+  <footer class="footer">
+    <!-- the site brand name & crest/logo -->
+    <div class="footer-brand">
+      <a href="#/">
+        <i class="ti ti-linux"></i>
+      </a>
+      <span class="">IOI</span>
+    </div>
+
+    <!-- the site main page links -->
+    <div class="footer-links">
+      <ul>
+        <li>home</li>
+        <li>documentation</li>
+        <li>contact me</li>
+        <li>about me</li>
+      </ul>
+    </div>
+
+    <!-- the social media links -->
+    <div class="footer-links">
+      <ul>
+        <li>
+          <a href="#https://facebook.com/onoja_henry">
+            <i class="ti ti-facebook"></i>
+            <span>facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#https://twitter.com/onoja_henry">
+            <i class="ti ti-twitter"></i>
+            <span>twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="#https://instagram.com/onoja_henry">
+            <i class="ti ti-instagram"></i>
+            <span>instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="#https://google.com/onoja_henry">
+            <i class="ti ti-google"></i>
+            <span>google</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- the site external/affiliate links or subscription form -->
+    <div class="footer-subscriber-form">
+      <input type="email" id="footerSubscriberFrm" placeholder="Email Address">
+
+    </div>
+  </footer>
+</body>
+
+</html>
