@@ -19,12 +19,17 @@
       <!-- site navigation brand -->
       <div class="navbar-brand">
         <a href="#/">
-          <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest">
+          <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
+          <span class="brand-name">SMIC</span>
         </a>
-        <span class="">IOI</span>
+        <!-- hambuger menu icon for small devices(show on smaller screens) -->
+        <div class="small-device-menu-icon">
+          <i class="ti ti-menu" data-menu-btn="menu-btn"></i>
+        </div>
       </div>
+
       <!-- right nav menu -->
-      <div class="navbar-right">
+      <div class="navbar-right" data-navbar-menu="navbar-menu">
         <a href="#/">home</a>
         <a href="#/pages/docs.html">DOCS</a>
         <a href="#/pages/author.html">author</a>
@@ -34,12 +39,43 @@
   </header>
 
   <!-- First section (callout texts and device slide display) -->
-  <section class="section">
-    <!-- callout text about device and sub-title text -->
-    <div class="callout-text"></div>
+  <section class="callout-section">
+    <!-- device image slide (in the container's background) -->
+    <div class="device-img-slide-container">
+      <div class="device-img">
+        <img src="/assets/images/silver-and-green-circuit-board-1472443.jpg" alt="device_img_1" width="300" height="auto">
+      </div>
+      <div class="device-img">
+        <img src="/assets/images/shallow-focus-lens-photo-of-computer-processor-1432676.jpg" alt="device_img_2" width="300" height="auto">
+      </div>
+      <div class="device-img">
+        <img src="/assets/images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="device_img_3" width="300" height="auto">
+      </div>
+      <div class="device-img">
+        <img src="/assets/images/black-and-gray-motherboard-2582932.jpg" alt="device_img_4" width="300" height="auto">
+      </div>
+    </div>
 
-    <!-- device image slide -->
-    <div class="device-img-slide"></div>
+    <!-- img slide indicators -->
+    <div class="img-slide-indicator-container">
+      <span class="img-slide-indicator active"></span>
+      <span class="img-slide-indicator"></span>
+      <span class="img-slide-indicator"></span>
+      <span class="img-slide-indicator"></span>
+    </div>
+
+    <!-- callout text about device and sub-title text -->
+    <div class="callout-text-container">
+      <h1><span class="device-name">ZIP</span> Switch</h1>
+      <h2>A bytless electronic security switch.</h2>
+      
+      <div class="cto-btn-container">
+        <a href="#" class="btn read-more-btn">
+          <span>read more</span> 
+          <i class="ti ti-angle-double-right"></i>
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- Second section (gives brief & short importance of the device) -->
@@ -286,6 +322,9 @@
 
     </div>
   </footer>
+
+  <!-- javaScript files -->
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
