@@ -120,6 +120,10 @@
         object-fit: cover;
         object-position: center;
       }
+
+      &.active {
+        display: block;
+      }
     }
 
     .device-img:not(:first-of-type) {
@@ -191,3 +195,6 @@
 
 // Mobile or hand-held devices style(for site responsiveness)
 @import 'mobile';
+
+// animations styles
+@import 'animations';

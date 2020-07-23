@@ -1,0 +1,13 @@
+.fade-animation {
+  animation: fade 600ms;
+}
+
+// Fade animation effect
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
