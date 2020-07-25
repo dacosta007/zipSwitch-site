@@ -1,23 +1,78 @@
 // Wildscreen Devices
 @include mediaXl {
-  
+  .section {
+    max-width: 1140px;
+  }
+
+  .callout-section {
+
+    .img-slide-indicator-container {
+      padding: 0 3rem;
+    }
+
+    .callout-text-container {
+      padding: 0 3rem 2rem 3rem;
+
+      h1 {
+        font-size: 11vw;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 // Desktop & Laptop Devices
 @include mediaLg {
-  // .navbar {
+  .section {
+    max-width: 960px;
+  }
 
-  //   &-brand {
-  //     .small-device-menu-icon {
-  //       display: none;
-  //     }
-  //   }
-  // }
+  .callout-section {
+
+    .img-slide-indicator-container {
+      padding: 0 3rem;
+    }
+
+    .callout-text-container {
+      padding: 0 3rem 2rem 3rem;
+
+      h1 {
+        font-size: 11vw;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 // Tablet & Small Devices
 @include mediaMd {
-  
+  .section {
+    max-width: 720px;
+  }
+
+  .callout-section {
+
+    .img-slide-indicator-container {
+      padding: 0 3rem !important;
+    }
+    .callout-text-container {
+      padding: 0 3rem 2rem 3rem !important;
+
+      h1 {
+        font-size: 15vw;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 // Smartphone Devices
@@ -97,5 +152,9 @@
         transform: translateY(0px);
       }
     }
+  }
+
+  .section {
+    max-width: 540px;
   }
 }
