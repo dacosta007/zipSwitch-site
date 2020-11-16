@@ -7,6 +7,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon"  type="image/x-icon" href="/favicon.ico">
   <link rel="manifest" href="/site.webmanifest">
   <title>Home Page | ZIP Switch Device Prototype</title>
   <link rel="stylesheet" href="/assets/css/themify-icons.css" />
@@ -20,7 +21,7 @@
       <div class="navbar-brand">
         <a href="#/">
           <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
-          <span class="brand-name">SMIC</span>
+          <span class="brand-name">SIMIC</span>
         </a>
         <!-- hambuger menu icon for small devices(show on smaller screens) -->
         <div class="small-device-menu-icon">
@@ -69,12 +70,12 @@
       <h1><span class="device-name">ZIP</span> Switch</h1>
       <h2>A bytless electronic security switch.</h2>
       
-      <div class="cto-btn-container">
+      <!-- <div class="cto-btn-container">
         <a href="#" class="btn read-more-btn">
           <span>read more</span> 
           <i class="ti ti-angle-double-right"></i>
         </a>
-      </div>
+      </div> -->
     </div>
 
     <!-- help scroll to second section of the homepage -->
@@ -84,149 +85,168 @@
   </section>
 
   <!-- Second section (gives brief & short importance of the device) -->
-  <section class="section" id="secondSection">
-    <!-- section insightful title heading -->
-    <div class="section-title">
-      <h2 class="">main section title</h2>
-      <h3 class="">section sub-title</h3>
-    </div>
-
-    <div class="flex-container">
-      <!-- device image with scroll control & can be clicked to preview in a modal -->
-      <!-- (NOTE: Should be hiding on small hand-held devices) -->
-      <div class="device-img-slide-preview-container">
-        <img src="#" alt="device_img_1" />
-        <img src="#" alt="device_img_2" />
-        <img src="#" alt="device_img_3" />
-        <img src="#" alt="device_img_4" />
+  <section class="second-section" id="secondSection">
+    <div class="section">
+      <!-- section insightful title heading -->
+      <div class="section-title">
+        <h3 class="">why ZIP switch?</h3>
+        <h1 class="">some noticeable features</h1>
       </div>
-
-      <!-- device economic highlighted importances -->
-      <div class="brief-importance-container">
-        <div class="highlighted-importance">
-          <!-- highlighted icon -->
-          <i class="ti ti-lock"></i>
-          <!-- breif highlighted title & text -->
-          <div>
-            <h4 class="title">importance title one</h4>
-            <p>
+  
+      <div class="grid-container two-grid-columns">
+        <!-- device image with scroll control & can be clicked to preview in a modal -->
+        <!-- (NOTE: Should be hiding on small hand-held devices) -->
+        <div class="img-showcase-container">
+          <div class="device-img-slide-preview-container">
+            <img class="active" src="/assets/images/silver-and-green-circuit-board-1472443.jpg" data-device-img="0" alt="device_img_1" width="300" height="auto" loading="lazy" />
+            <img src="/assets/images/shallow-focus-lens-photo-of-computer-processor-1432676.jpg" data-device-img="1" alt="device_img_2" width="300" height="auto" loading="lazy" />
+            <img src="/assets/images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" data-device-img="2" alt="device_img_3" width="300" height="auto" loading="lazy" />
+            <img src="/assets/images/black-and-gray-motherboard-2582932.jpg" data-device-img="3" alt="device_img_4" width="300" height="auto" loading="lazy" />
+          </div>
+  
+          <!-- slide img preview indicators -->
+          <div class="img-preview-indicator-container">
+            <span class="img-preview-indicator active"></span>
+            <span class="img-preview-indicator"></span>
+            <span class="img-preview-indicator"></span>
+            <span class="img-preview-indicator"></span>
+          </div>
+        </div>
+  
+        <!-- device economic highlighted features/importances -->
+        <div class="brief-importance-container">
+          <div class="highlighted-importance">
+            <!-- highlighted feature icon & title -->
+            <div class="feature-title-header">
+              <i class="ti ti-shield"></i>
+              <h3>current flow security</h3>
+            </div>
+            <!-- breif highlighted feature text -->        
+            <p class="feature-description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
               voluptate.
             </p>
           </div>
-        </div>
-
-        <div class="highlighted-importance">
-          <!-- highlighted icon -->
-          <i class="ti ti-shield"></i>
-          <!-- breif highlighted title & text -->
-          <div>
-            <h4 class="title">importance title two</h4>
-            <p>
+  
+          <div class="highlighted-importance">
+            <!-- highlighted feature icon & title -->
+            <div class="feature-title-header">
+              <i class="ti ti-credit-card"></i>
+              <h3>save money on bills</h3>
+            </div>
+            <!-- breif highlighted feature text -->
+            <p class="feature-description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
               voluptate.
             </p>
           </div>
-        </div>
-
-        <div class="highlighted-importance">
-          <!-- highlighted icon -->
-          <i class="ti ti-layers"></i>
-          <!-- breif highlighted title & text -->
-          <div>
-            <h4 class="title">importance title three</h4>
-            <p>
+  
+          <div class="highlighted-importance">
+            <!-- highlighted feature icon & title -->
+            <div class="feature-title-header">
+              <i class="ti ti-layers"></i>
+              <h3>have total control</h3>
+            </div>
+            <!-- breif highlighted feature text -->
+            <p class="feature-description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
               voluptate.
             </p>
+            <!-- btn to read more about device in the documentation page -->
+            <a href="#/pages/docs.html" class="btn read-more-btn">
+              <span>read more</span> <i class="ti ti-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- call-to-action(C.T.A) btns to preview images, & to read more about the device -->
-    <!-- (NOTE: To only be displayed on hand-held or mobile devices) -->
-    <div class="flex-container cta-btn-container">
-      <!-- btn to display images slide in a modal window -->
-      <button class="btn btn-default" id="previewImgSlide">
-        preview image
-      </button>
-
-      <!-- btn to read more about device in the documentation page -->
-      <a href="#/pages/docs.html" class="btn read-more-btn">read more</a>
     </div>
   </section>
 
   <!-- Third section (help emphasis on: about the device, & designer/engineer of the device) -->
-  <section class="section">
+  <section class="section third-section">
     <!-- section insightful title heading -->
     <div class="section-title">
-      <h2 class="">Main section Title</h2>
-      <h3 class="">section sub-title</h3>
+      <h3 class="">something interesting!</h3>
+      <h1 class="">what ZIP switch is...</h1>
     </div>
 
-    <div class="flex-container">
+    <div class="grid-container two-grid-columns">
       <!-- A breif introductory text about the device -->
-      <div class="">
-        <h4 class="title">about device</h4>
+      <div class="about-container">
+        <h2 class="title">about device</h2>
         <p class="description">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
           nesciunt magnam illum obcaecati harum maiores recusandae incidunt,
           magni maxime nostrum laboriosam sed quo aspernatur, molestiae autem
-          debitis, perferendis reiciendis inventore?
+          debitis, perferendis reiciendis inventore?.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, tempore. 
+          Voluptatibus alias aut ullam, tempore nobis at ad repellat commodi.
         </p>
 
         <!-- C.T.A btn to read more about the device -->
-        <div>
-          <a href="#/pages/docs.html" class="btn read-more-btn">read more</a>
+        <div class="cta-btn-container">
+          <a href="#/pages/docs.html" class="btn read-more-btn">
+            <span>read more</span> <i class="ti ti-arrow-right"></i>
+          </a>
         </div>
       </div>
 
       <!-- An image and little insight about the device designer/engineer -->
-      <div class="center-text">
+      <div class="author-container">
+        <h2 class="title center-text">author</h2>
         <!-- device engineer/designer's img -->
-        <img src="#" alt="author/designer/engineer_pic" width="50px" height="auto" class="authors-img" />
-
-        <!-- device engineer/designer's fullname -->
-        <h4 class="title">onoja A. henry</h4>
-        <h5 class="sub-title">physist</h5>
+        <div class="center-text">
+          <img src="/assets/images/author.jpg" alt="author/designer/engineer_pic" width="50px" height="auto" class="authors-img" />
+  
+          <!-- device engineer/designer's fullname -->
+          <h3 class="title authors-name">onoja b. henry</h3>
+          <h5 class="sub-title author-titles">
+            <span>physicist</span> <span>mathematician</span> <span>electrician</span>
+          </h5>
+        </div>
 
         <!-- social media links -->
-        <div class="social-media-link-container">
-          <a href="#/https/facebook.com/onoja" class="social-link facebook-link">
-            <i class="ti-ti-facebook"></i>
+        <div class="center-text social-media-link-container">
+          <a href="#/https/facebook.com/onoja" class="social-link">
+            <i class="ti ti-facebook facebook-link"></i>
           </a>
-          <a href="#https/twitter.com/onoja" class="social-link twitter-link">
-            <i class="ti ti-twitter"></i>
+          <a href="#https/twitter.com/onoja" class="social-link">
+            <i class="ti ti-twitter twitter-link"></i>
           </a>
-          <a href="#https/instagram.com/onoja" class="social-link instagram-link">
-            <i class="ti ti-instagran"></i>
+          <a href="#https/instagram.com/onoja" class="social-link">
+            <i class="ti ti-instagram instagram-link"></i>
           </a>
-          <a href="#https/linkedin.com/onoja" class="social-link linkedin-link">
-            <i class="ti ti-linkedin"></i>
+          <a href="#https/linkedin.com/onoja" class="social-link">
+            <i class="ti ti-linkedin linkedin-link"></i>
           </a>
         </div>
 
         <!-- C.T.A btn to read more about the engineer/designer on authors page -->
-        <a href="#/pages/author.html" class="btn read-more-btn">read more</a>
+        <div class="authors-cta-btn-container">
+          <a href="#/pages/author.html" class="btn read-more-btn">
+            <span>read more</span> <i class="ti ti-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Fourth section (help make interested vistors make donations or sponsor the project and also subscribe to newsletters ) -->
-  <section class="section">
+  <section class="section fourth-section">
     <!-- section insightful title heading -->
     <div class="section-title">
-      <h2 class="">Main section Title</h2>
-      <h3 class="">section sub-title</h3>
+      <h1 class="">care to know more or support?</h1>
     </div>
 
-    <div class="flex-container">
+    <div class="grid-container two-grid-columns">
       <!-- section for newsletter subscription by insterested visitors -->
-      <div>
-        <h4 class="title">join out newsletter</h4>
+      <div class="newsletter-container">
+        <h3 class="title">
+          be the first to know when new content is available
+        </h3>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ab? Cupiditate itaque corporis praesentium.
+          join or signup for our newsletter to receive tips, tricks, and update on <b style="color: #441548;">ZIP switch</b>, 
+          and other prototypes/products which will be coming out in future time.
         </p>
         <!-- accept visitor's email for newsletter subscription -->
         <div class="newsletter-input-field">
@@ -238,33 +258,35 @@
       </div>
 
       <!-- section for interested visitors to make donations/sponsor to the project -->
-      <div>
-        <h4 class="title">Want to support the project?</h4>
+      <div class="donation-container">
+        <h3 class="title">Want to support the project?</h3>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo porro quisquam, iusto quae inventore!
+          To enhance and help this project transition out of a prototype to a production stage, 
+          every/any token as you can afford, will be greatly appreciated. Below are links to
+          accept any of your kind gestures: 
         </p>
         <!-- give diff links avialable to visitors in making donation/sponsorship easier -->
-        <div class="grid-container">
+        <div class="donation-links-container">
           <!-- paypal donation link -->
-          <a href="#https://paypal.com/donation" class="donation-link">
+          <a href="#https://paypal.com/donation" class="donation-link" style="background: #0a2c4f;" target="_blank" title="Go to paypal to make donation to this project">
             <!-- donation img link -->
-            <img src="#" alt="paypal_donation_link_img">
+            <img src="/assets/images/paypal-icon-logo.png" class="donation-icon-logo" alt="paypal_donation_link_img" width="70px" height="auto">
             <!-- donation img title -->
-            <h5 class="sub-title">paypal</h5>
+            <img src="/assets/images/paypal-name-logo.png" class="donation-name-logo" alt="paypal_name_logo" width="70px" height="auto">
           </a>
           <!-- patreon donation link -->
-          <a href="#https://patreon.com/donation" class="donation-link">
+          <a href="#https://patreon.com/donation" class="donation-link" style="background: #ac521c;" target="_blank" title="Go to patreon to make donation to this project">
             <!-- donation img link -->
-            <img src="#" alt="patreon_donation_link_img">
+            <img src="/assets/images/patreon_logo.png" class="donation-icon-logo" alt="patreon_donation_link_img" width="70px" height="auto">
             <!-- donation img title -->
-            <h5 class="sub-title">patreon</h5>
+            <img src="/assets/images/patreon_logo_name.png" class="donation-name-logo" alt="patreon_name_logo" width="70px" height="auto">
           </a>
           <!-- flutterwave donation link -->
-          <a href="#https://flutterwave.com/donation" class="donation-link">
+          <a href="#https://flutterwave.com/donation" class="donation-link" style="background: #afca2f;" target="_blank" title="Go to flutterwave to make donation to this project">
             <!-- donation img link -->
-            <img src="#" alt="flutterwave_donation_link_img">
+            <img src="/assets/images/flutterwave_icon.png" class="donation-icon-logo" alt="flutterwave_donation_link_img" width="70px" height="auto">
             <!-- donation img title -->
-            <h5 class="sub-title">flutterwave</h5>
+            <img src="/assets/images/flutterwave-logo-name.png" class="donation-name-logo" alt="donation_name_logo" width="70px" height="auto">
           </a>
         </div>
       </div>
@@ -273,60 +295,90 @@
 
   <!-- footer section of the page -->
   <footer class="footer">
-    <!-- the site brand name & crest/logo -->
-    <div class="footer-brand">
-      <a href="#/">
-        <i class="ti ti-linux"></i>
-      </a>
-      <span class="">IOI</span>
-    </div>
-
-    <!-- the site main page links -->
-    <div class="footer-links">
-      <ul>
-        <li>home</li>
-        <li>documentation</li>
-        <li>contact me</li>
-        <li>about me</li>
-      </ul>
-    </div>
-
-    <!-- the social media links -->
-    <div class="footer-links">
-      <ul>
-        <li>
-          <a href="#https://facebook.com/onoja_henry">
-            <i class="ti ti-facebook"></i>
-            <span>facebook</span>
+    <div class="section">
+      <div class="grid-container">
+        <!-- the site brand name & crest/logo -->
+        <div class="footer-brand">
+          <a href="#/">
+            <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
+            <span class="brand-name">SIMIC</span>
           </a>
-        </li>
-        <li>
-          <a href="#https://twitter.com/onoja_henry">
-            <i class="ti ti-twitter"></i>
-            <span>twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="#https://instagram.com/onoja_henry">
-            <i class="ti ti-instagram"></i>
-            <span>instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="#https://google.com/onoja_henry">
-            <i class="ti ti-google"></i>
-            <span>google</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+        </div>
 
-    <!-- the site external/affiliate links or subscription form -->
-    <div class="footer-subscriber-form">
-      <input type="email" id="footerSubscriberFrm" placeholder="Email Address">
+        <!-- the main site page links -->
+        <div>
+          <h5 class="footer-title">pages</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="#/">home</a>
+            </li>
+            <li>
+              <a href="#/pages/docs.html">documentation</a>
+            </li>
+            <li>
+              <a href="#/pages/contact.html">contact me</a>
+            </li>
+            <li>
+              <a href="#/pages/about.html">about me</a>
+            </li>
+          </ul>
+        </div>
 
+        <!-- the social media links -->
+        <div>
+          <h5 class="footer-title">social media</h5>
+          <div class="social-description">
+            Follow me on social media to find out the latest update on my progress.
+          </div>
+          <div class="footer-social-media-links">
+            <a href="#https://facebook.com/onoja_henry">
+              <i class="ti ti-facebook"></i>
+            </a>
+
+            <a href="#https://twitter.com/onoja_henry">
+              <i class="ti ti-twitter"></i>
+            </a>
+
+            <a href="#https://instagram.com/onoja_henry">
+              <i class="ti ti-instagram"></i>
+            </a>
+
+            <a href="#https://linkedin.com/onoja_henry">
+              <i class="ti ti-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- site's reserved copyright -->
+      <div class="site-copyright-container">
+        <small>copyright &copy;2020 SIMIC<sup>&trade;</sup>. All Rights Reserved.</small>
+      </div>
     </div>
   </footer>
+
+  <!-- Modal window for image preview/showcase -->
+  <aside class="modal">
+    <div class="modal-content">
+      <!-- preview image container -->
+      <div class="image-preview">
+        <!-- close modal window -->
+        <span class="close-modal">
+          <i class="ti ti-close"></i>
+        </span>
+        <img src="/assets/images/silver-and-green-circuit-board-1472443.jpg" width="350" height="auto" alt="modal_previewed_img" id="modalPreviewImg" loadin="lazy" />
+      </div>
+  
+      <!-- list of device images -->
+      <div class="image-list-container">
+        <img src="/assets/images/silver-and-green-circuit-board-1472443.jpg" data-modal-img-list="0" width="35" height="auto" alt="device_img_1" loading="lazy" />
+        <img src="/assets/images/shallow-focus-lens-photo-of-computer-processor-1432676.jpg" data-modal-img-list="1" width="35" height="auto" alt="device_img_2" loading="lazy" />
+        <img src="/assets/images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" data-modal-img-list="2" width="35" height="auto" alt="device_img_3" loading="lazy" />
+        <img src="/assets/images/black-and-gray-motherboard-2582932.jpg" data-modal-img-list="3" width="35" height="auto" alt="device_img_4" loading="lazy" />
+      </div>
+    </div>
+
+  </aside>
 
   <!-- javaScript files -->
   <script src="/assets/js/main.js"></script>

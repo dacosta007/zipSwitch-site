@@ -1,3 +1,29 @@
+// for slide out animation
+@mixin slide-out($animationDuration: 1s) {
+  animation: preview-img-slide-out $animationDuration !important;
+}
+
+// for slide in animation
+@mixin slide-in($animationDuration: 1s) {
+  animation: preview-img-slide-in $animationDuration !important;
+}
+
+@mixin  boxShadow($color) {
+  box-shadow: 0 16px 40px 0.20px $color;
+}
+
+// for social link color
+@mixin social-link-color($color) {
+  color: $color;
+}
+
+// for social link hover
+@mixin social-link-hover($bgcolor, $color) {
+  background: $bgcolor;
+  color: $color;
+  transition: backgroud 1s ease-in-out;
+}
+
 // === Media Queries Mixins ===
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
