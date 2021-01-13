@@ -34,17 +34,19 @@
   color: $site-pry-color;
   letter-spacing: 1px;
   font-weight: bold;
-  padding: 8px 10px;
+  padding: 10px;
+  border-radius: 2px;
   background: transparentize($color: #b03513, $amount: 1);
-  transition: background 500ms ease;
 
   &:hover {
-    background: #b03513;
-    color: #e8e8ee;
+    transition: background 500ms ease;
+    background: transparentize(#b03513, 0);
+    color: $light-grey-color;
   }
 
   i.ti {
     display: inline-block;
-    margin-left: 7px;
+    margin-left: 18px;
+    transform: translateY(1.3px);
   }
 }

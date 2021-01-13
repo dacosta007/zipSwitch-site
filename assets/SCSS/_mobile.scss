@@ -1,4 +1,4 @@
-// Wildscreen Devices
+// Wild Screen Desktop & Laptop Devices
 @include mediaXl {
   .section {
     max-width: 1140px;
@@ -22,9 +22,24 @@
       }
     }
   }
+
+  // .author-branding-container {
+  //   height: 70vh;
+
+  //   .author-branding {
+  //     padding-top: 9%;
+  //     padding-left: 19rem;
+  //     padding-right: 19rem;
+  //   }
+
+  //   .author-description-container {
+  //     padding-left: 9rem;
+  //     padding-right: 9rem;
+  //   }
+  // }
 }
 
-// Desktop & Laptop Devices
+// Large Screen Tablet, Laptop, & Desktop Devices
 @include mediaLg {
   .section {
     max-width: 960px;
@@ -48,9 +63,17 @@
       }
     }
   }
+
+  .author-branding-container {
+    height: 60vh;
+
+    .author-branding {
+      padding-left: 8rem;
+    }
+  }
 }
 
-// Tablet & Small Devices
+// Medium Tablet & Small Devices
 @include mediaMd {
   .section {
     max-width: 720px;
@@ -77,9 +100,26 @@
       }
     }
   }
+
+  .author-branding-container {
+    height: 60vh;
+
+    .author-branding {
+      padding-left: 5rem;
+    }
+  }
+
+  .author-description-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    .fill-whitespace {
+      left: -4%;
+    }
+  }
 }
 
-// Smartphone Devices
+// Small or Smartphone Devices
 @include mediaSm {
   .navbar {
     flex-direction: column;
@@ -261,6 +301,65 @@
     }
   }
 
+  // ==== Authors page starts ====
+  .author-branding-container {
+
+    .author-branding {
+      padding-left: 0;
+
+      .flex-container:first-of-type {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .author-img-container {
+          height: 250px;
+          width: 75%;
+        }
+
+        .author-name-decipline-container {
+          padding: 0;
+
+          .author-name-container {
+            display: flex;
+            justify-content: center;
+            margin: 0.7rem 0;
+            gap: 10px;
+
+            h1 {
+              font-size: 32px;
+              text-align: center;
+            }
+
+            h1:nth-child(2) {
+              margin-top: 0;
+            }
+          }
+
+          .author-decipline-container {
+            justify-content: center;
+          }
+
+          .read-more-btn {
+            margin: 0rem;
+            transform: translateX(65%);
+          }
+        }
+      }
+    }
+  }
+
+  .author-description-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    .fill-whitespace {
+      top: -3%;
+      left: -39%;
+    }
+  }
+  // ==== Author's page ends ====
+
   .footer {
     padding: 0;
 
@@ -269,8 +368,15 @@
       gap: 22px;
     }
 
-    .footer-brand a {
-      justify-content: center;
+    .footer-brand {
+
+      a {
+        justify-content: center;
+      }
+
+      .brand-fullname {
+        justify-content: center;
+      }
     }
 
     .footer-title {

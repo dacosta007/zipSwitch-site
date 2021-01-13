@@ -128,6 +128,7 @@
 }
 
 .title {
+  font-family: $title-font;
   text-transform: capitalize;
   letter-spacing: 1px;
   margin-bottom: 0.6rem;
@@ -140,6 +141,7 @@
 }
 
 .section-title {
+  font-family: $title-font;
   text-align: center;
   padding: 5rem 0 2.5rem;
 
@@ -432,6 +434,7 @@
   }
 }
 
+// Fourth section of home page (index.html)
 .fourth-section {
   padding: 0.8rem;
 
@@ -499,6 +502,9 @@
     }
   }
 }
+
+// for author page style
+@import 'author';
 
 // site's footer section style
 @import 'footer';
