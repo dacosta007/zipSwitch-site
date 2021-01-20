@@ -184,7 +184,7 @@ document.addEventListener('load', smallNav());
 
 // Init images slide animation effects
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.location.href == `${document.location.origin}/`) {
+  if (document.location.href == `${document.location.origin}/` || document.location.href == `${document.location.origin}/index.html`) {
     // callout image showcase slide 
     showImgSlides();
   
