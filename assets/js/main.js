@@ -180,7 +180,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Init small device navbar
-document.addEventListener('load', smallNav());
+document.addEventListener('load', smallNav());git 
 
 // Init images slide animation effects
 document.addEventListener('DOMContentLoaded', () => {
