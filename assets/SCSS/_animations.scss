@@ -3,6 +3,10 @@
   animation: fade 1s;
 }
 
+.fade-out {
+  animation: fade-out 1s linear;
+}
+
 .slide-img-out {
   @include slide-out(500ms);
 }
@@ -21,6 +25,17 @@
     opacity: 1;
   }
 }
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// Fade effect ends
 
 // ==== Image preview slide effect ====
 @keyframes preview-img-slide-out {

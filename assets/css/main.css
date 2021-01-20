@@ -325,6 +325,14 @@ html, body {
   margin-bottom: 0.6rem;
 }
 
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
 .description {
   font-size: 16px;
   padding-top: 0.7rem;
@@ -783,6 +791,214 @@ html, body {
   filter: opacity(4%);
 }
 
+.navbar {
+  background: rgba(14, 19, 36, 0.5);
+}
+
+.contact-img-container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 40%;
+}
+
+.contact-img-container img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.contact-section {
+  background: #ecf3ff;
+  padding: 3rem 0;
+}
+
+.contact-section .contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.contact-section .contact-container .contact-info-section, .contact-section .contact-container .contact-form-section {
+  padding: 0.8rem 1.5rem;
+}
+
+.contact-section .contact-container .contact-detail:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.contact-section .contact-container .contact-detail h4.title {
+  margin-bottom: 0;
+}
+
+.contact-section .contact-container .contact-detail .social-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 1rem;
+}
+
+.contact-section .contact-container .contact-detail .social-container i.ti {
+  padding: 12px;
+  border-radius: 50px;
+  background: #e2eafb;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact-section .contact-container .contact-detail .social-container i.ti:hover {
+  background: rgba(226, 234, 251, 0.5);
+  transition: background 0.2s ease-in;
+}
+
+.contact-section .contact-container .contact-form-section {
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 #e3e9f3;
+  position: relative;
+  overflow: auto;
+}
+
+.contact-section .contact-container .contact-form-section .input-field {
+  position: relative;
+}
+
+.contact-section .contact-container .contact-form-section .input-field:not(:last-of-type) {
+  margin-bottom: 1.2rem;
+}
+
+.contact-section .contact-container .contact-form-section .input-field label, .contact-section .contact-container .contact-form-section .input-field i {
+  position: absolute;
+}
+
+.contact-section .contact-container .contact-form-section .input-field label {
+  user-select: none;
+  font-size: 1rem;
+  color: #463a71;
+  text-transform: capitalize;
+  left: 0;
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
+  padding: 0 0.4rem;
+}
+
+.contact-section .contact-container .contact-form-section .input-field i {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 0.5rem;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input, .contact-section .contact-container .contact-form-section .input-field textarea {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #7a7a7a56;
+  border-radius: 0.3rem;
+  transition: border-color 0.2s;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input:focus, .contact-section .contact-container .contact-form-section .input-field textarea:focus {
+  border-color: #463a71;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input::placeholder, .contact-section .contact-container .contact-form-section .input-field textarea::placeholder {
+  color: transparent;
+  text-transform: capitalize;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input:focus::placeholder, .contact-section .contact-container .contact-form-section .input-field textarea:focus::placeholder {
+  color: #7a7a7a;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input:focus + label, .contact-section .contact-container .contact-form-section .input-field input:not(:placeholder-shown) + label, .contact-section .contact-container .contact-form-section .input-field textarea:focus + label, .contact-section .contact-container .contact-form-section .input-field textarea:not(:placeholder-shown) + label {
+  font-size: 0.8rem;
+  background: #ffffff;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input {
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.contact-section .contact-container .contact-form-section .input-field input + label {
+  margin-left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-section .contact-container .contact-form-section .input-field input:focus + label, .contact-section .contact-container .contact-form-section .input-field input:not(:placeholder-shown) + label {
+  top: 0%;
+}
+
+.contact-section .contact-container .contact-form-section .input-field textarea {
+  padding: 1rem;
+  resize: none;
+}
+
+.contact-section .contact-container .contact-form-section .input-field textarea + label {
+  margin-left: 0.5rem;
+  top: 10%;
+  transform: translateY(-10%);
+}
+
+.contact-section .contact-container .contact-form-section .input-field textarea:focus + label, .contact-section .contact-container .contact-form-section .input-field textarea:not(:placeholder-shown) + label {
+  top: -3.5%;
+}
+
+.contact-section .contact-container .contact-form-section .send-msg-btn-container {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.contact-section .contact-container .contact-form-section .send-msg-btn-container .btn {
+  background: #463a71;
+  color: #ffffff;
+}
+
+.contact-section .contact-container .contact-form-section .send-msg-btn-container .btn i.ti {
+  margin-left: 1rem;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  border-radius: 5px;
+  display: none;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container header {
+  padding: 1rem;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container header img {
+  width: 150px;
+  height: auto;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container header h2.title {
+  margin-bottom: 0;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container .confirmation-msg {
+  padding: 1rem 2rem;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container .close-msg-container {
+  padding: 1rem;
+}
+
+.contact-section .contact-container .contact-form-section .msg-confirmation-container .close-msg-container #closeMsg {
+  margin-top: 0.8rem;
+  min-width: 200px;
+  background: #141C2C;
+  color: #f9e4e4;
+}
+
 .footer {
   background: #141C2C;
   color: #8C94B8;
@@ -891,6 +1107,20 @@ html, body {
   .callout-section .callout-text-container h2 {
     font-size: 2rem;
   }
+  .contact-section h1.title:first-of-type {
+    font-size: 4em;
+  }
+  .contact-section .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .contact-section .contact-container .contact-info-section {
+    width: 300px;
+  }
+  .contact-section .contact-container .contact-form-section {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -914,6 +1144,20 @@ html, body {
   }
   .author-branding-container .author-branding {
     padding-left: 8rem;
+  }
+  .contact-section h1.title:first-of-type {
+    font-size: 3em;
+  }
+  .contact-section .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .contact-section .contact-container .contact-info-section {
+    width: 300px;
+  }
+  .contact-section .contact-container .contact-form-section {
+    width: 400px;
   }
 }
 
@@ -1129,6 +1373,23 @@ html, body {
     top: -3%;
     left: -39%;
   }
+  .contact-section h1.title:first-of-type {
+    font-size: 2.5em;
+  }
+  .contact-section .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .contact-section .contact-container .contact-detail {
+    margin-bottom: 2rem;
+  }
+  .contact-section .contact-container .contact-form-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contact-section .contact-container .contact-form-section .msg-confirmation-container .confirmation-msg {
+    padding: 0 1rem;
+  }
   .footer {
     padding: 0;
   }
@@ -1151,6 +1412,10 @@ html, body {
   animation: fade 1s;
 }
 
+.fade-out {
+  animation: fade-out 1s linear;
+}
+
 .slide-img-out {
   animation: preview-img-slide-out 500ms !important;
 }
@@ -1166,6 +1431,15 @@ html, body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 

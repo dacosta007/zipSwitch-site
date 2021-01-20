@@ -134,6 +134,14 @@
   margin-bottom: 0.6rem;
 }
 
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
 .description {
   font-size: 16px;
   padding-top: 0.7rem;
@@ -503,8 +511,11 @@
   }
 }
 
-// for author page style
+// for author/doc page style
 @import 'author';
+
+// for contact us page style
+@import 'contact';
 
 // site's footer section style
 @import 'footer';

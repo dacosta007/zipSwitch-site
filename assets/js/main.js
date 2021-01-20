@@ -31,6 +31,32 @@ const smallNav = () => {
   });
 }
 
+// help show  successful confirmation message on contact form
+const confirmationMsg = (e) => {
+  // prevent default behaviour of form submission
+  e = e || window.event;
+  e.preventDefault();
+
+  // show confirmation message
+  const msg = query(document, '.msg-confirmation-container');
+  msg.classList.add('show');
+
+  // clear all input field
+  id('contactFrm').reset();
+};
+
+// help close confirmation message on contact form
+const closeConfirmationMsg = () => {
+  const msg = query(document, '.msg-confirmation-container');
+  msg.classList.add('fade-out');
+
+  // hide confirmation message after 1s.
+  setTimeout(() => {
+    msg.classList.remove('fade-out');
+    msg.classList.remove('show');
+  }, 1000);
+};
+
 // handles img slide on the page first section
 let imgSlideIndx = 0;
 const showImgSlides = () => {
@@ -158,14 +184,18 @@ document.addEventListener('load', smallNav());
 
 // Init images slide animation effects
 document.addEventListener('DOMContentLoaded', () => {
-  // callout image showcase slide 
-  showImgSlides();
-
-  // for image slide preview
-  imgSlides();
+  if (document.location.href == `${document.location.origin}/`) {
+    // callout image showcase slide 
+    showImgSlides();
+  
+    // for image slide preview
+    imgSlides();
+  }
 });
 
 // close modal window
 const closeModalBtn = query(document, '.close-modal');
-closeModalBtn.addEventListener('click', closeModal);
+if (closeModalBtn && closeModalBtn != undefined) {
+  closeModalBtn.addEventListener('click', closeModal);
+}
 /* ***** Event Handlers Ends ***** */

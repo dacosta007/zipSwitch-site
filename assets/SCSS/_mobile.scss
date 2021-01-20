@@ -23,20 +23,28 @@
     }
   }
 
-  // .author-branding-container {
-  //   height: 70vh;
+  // Contact us page starts
+  .contact-section {
 
-  //   .author-branding {
-  //     padding-top: 9%;
-  //     padding-left: 19rem;
-  //     padding-right: 19rem;
-  //   }
+    h1.title:first-of-type {
+      font-size: 4em;
+    }
 
-  //   .author-description-container {
-  //     padding-left: 9rem;
-  //     padding-right: 9rem;
-  //   }
-  // }
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+
+      .contact-info-section {
+        width: 300px;
+      }
+
+      .contact-form-section {
+        width: 400px;
+      }
+    }
+  }
+  // Contact us page ends
 }
 
 // Large Screen Tablet, Laptop, & Desktop Devices
@@ -64,6 +72,7 @@
     }
   }
 
+  // Author's page starts
   .author-branding-container {
     height: 60vh;
 
@@ -71,6 +80,30 @@
       padding-left: 8rem;
     }
   }
+  // Author's page ends
+
+  // Contact us page starts
+  .contact-section {
+
+    h1.title:first-of-type {
+      font-size: 3em;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+
+      .contact-info-section {
+        width: 300px;
+      }
+
+      .contact-form-section {
+        width: 400px;
+      }
+    }
+  }
+  // Contact us page ends
 }
 
 // Medium Tablet & Small Devices
@@ -301,7 +334,7 @@
     }
   }
 
-  // ==== Authors page starts ====
+  // ==== Author's page starts ====
   .author-branding-container {
 
     .author-branding {
@@ -359,6 +392,37 @@
     }
   }
   // ==== Author's page ends ====
+
+
+  // ==== Contact us page starts ====
+  .contact-section {
+
+    h1.title:first-of-type {
+      font-size: 2.5em;
+    }
+
+    .contact-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+
+      .contact-detail {
+        margin-bottom: 2rem;
+      }
+
+      .contact-form-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .msg-confirmation-container {
+          
+          .confirmation-msg {
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+  // ==== Contact us page ends ====
 
   .footer {
     padding: 0;

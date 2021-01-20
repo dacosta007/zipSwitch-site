@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="shortcut icon"  type="image/x-icon" href="/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/css/themify-icons.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <header class="">
+    <nav class="navbar">
+      <!-- site navigation brand -->
+      <div class="navbar-brand">
+        <a href="#/">
+          <img src="../assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
+          <span class="brand-name">HTD</span>
+        </a>
+        <!-- hambuger menu icon for small devices(show on smaller screens) -->
+        <div class="small-device-menu-icon">
+          <i class="ti ti-menu" data-menu-btn="menu-btn"></i>
+        </div>
+      </div>
+
+      <!-- right nav menu -->
+      <div class="navbar-right" data-navbar-menu="navbar-menu">
+        <a href="/">home</a>
+        <a href="docs.html">DOCS</a>
+        <a href="author.html">author</a>
+        <a href="contact.html">contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- contact us image allegory -->
+  <section class="contact-img-container">
+    <img src="/assets/images/contact-us-img.svg" class="contact-us-img" alt="contact_us_img" width="400px" height="auto">
+  </section>
+
+  <!-- Author's Public Contact detail & contact form -->
+  <section class="contact-section">
+    <div class="section">
+      <h1 class="section title center-text">contact Us</h1>
+
+      <div class="contact-container">
+        <div class="contact-info-section">
+          <h2 class="title">get in touch</h2>
+
+          <!-- author's 'public Email' -->
+          <div class="contact-detail">
+            <h4 class="title">mail</h4>
+            <p>
+              mail.hybridtechdesign.com
+            </p>
+          </div>
+
+          <!-- author's 'public Phone Numbers' -->
+          <div class="contact-detail">
+            <h4 class="title">phone</h4>
+            <p>+234 803 2055 616</p>
+            <p>+234 815 5432 018</p>
+          </div>
+
+          <!-- author's social handles -->
+          <div class="contact-detail">
+            <h4 class="title">social</h4>
+            <div class="social-container">
+              <i class="ti ti-facebook"></i>
+              <i class="ti ti-twitter"></i>
+              <i class="ti ti-instagram"></i>
+              <i class="ti ti-linkedin"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="contact-form-section">
+          <h2 class="title center-text">send us a message</h2>
+          <!-- Contact form -->
+          <form action="#" method="POST" onsubmit="confirmationMsg()" id="contactFrm">
+            <div class="input-field">
+              <input type="text" name="fullname" id="fullname" placeholder="your full name" required>
+              <label for="fullname">full name</label>
+              <i class="ti ti-user"></i>
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" id="email" placeholder="your email address" required>
+              <label for="email">email address</label>
+              <i class="ti ti-email"></i>
+            </div>
+            <div class="input-field">
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="write us a message" required></textarea>
+              <label for="message">write us a message</label>
+              <i class="ti ti-edit"></i>
+            </div>
+            
+            <div class="send-msg-btn-container">
+              <button type="submit" class="btn">
+                <span>send message</span> 
+                <i class="ti ti-email"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Sent message confirmation -->
+          <div class="msg-confirmation-container fade">
+            <!-- confirmation confetti img -->
+            <header class="center-text">
+              <img src="../assets/images/msg-sent-confirm.svg" alt="confirmation_img" width="300px" height="auto">
+              <h2 class="title">message successfully sent!</h2>
+            </header>
+            <!-- confirmation message -->
+            <p class="confirmation-msg">
+              Your message as being recieved, and we are glad you are interested in the project. 
+              We will get back to you within 24hr, thank you for. If there are any further enquires, 
+              our contact lines are open 24hrs a day, 7days a week.
+            </p>
+            <!-- close confirmation msg btn -->
+            <div class="center-text close-msg-container">
+              <button type="button" onclick="closeConfirmationMsg()"  class="btn" id="closeMsg">
+                close message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section of the page -->
+  <footer class="footer">
+    <div class="section">
+      <div class="grid-container">
+        <!-- the site brand name & crest/logo -->
+        <div class="footer-brand">
+          <a href="../">
+            <img src="../assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
+            <span class="brand-name">HTD<sup>&trade;</sup></span>
+          </a>
+          <div class="brand-fullname">
+            <span>hybrid</span>
+            <span>tech</span>
+            <span>design</span>
+          </div>
+        </div>
+
+        <!-- the main site page links -->
+        <div>
+          <h5 class="footer-title">pages</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="../">home</a>
+            </li>
+            <li>
+              <a href="./docs.html">documentation</a>
+            </li>
+            <li>
+              <a href="./about.html">about me</a>
+            </li>
+            <li>
+              <a href="./contact.html">contact me</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- the social media links -->
+        <div>
+          <h5 class="footer-title">social media</h5>
+          <div class="social-description">
+            Follow me on social media to find out the latest update on my progress.
+          </div>
+          <div class="footer-social-media-links">
+            <a target="_blank" href="#https://facebook.com/onoja_henry">
+              <i class="ti ti-facebook"></i>
+            </a>
+
+            <a target="_blank" href="#https://twitter.com/onoja_henry">
+              <i class="ti ti-twitter"></i>
+            </a>
+
+            <a target="_blank" href="#https://instagram.com/onoja_henry">
+              <i class="ti ti-instagram"></i>
+            </a>
+
+            <a target="_blank" href="#https://linkedin.com/onoja_henry">
+              <i class="ti ti-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- site's reserved copyright -->
+      <div class="site-copyright-container">
+        <small>copyright &copy;2020 HTD<sup>&trade;</sup>. All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- javaScript files -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
