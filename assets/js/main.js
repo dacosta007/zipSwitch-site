@@ -32,17 +32,29 @@ const smallNav = () => {
 }
 
 // help show  successful confirmation message on contact form
-const confirmationMsg = (e) => {
+const confirmationMsg =  (e) => {
   // prevent default behaviour of form submission
   e = e || window.event;
   e.preventDefault();
 
-  // show confirmation message
-  const msg = query(document, '.msg-confirmation-container');
-  msg.classList.add('show');
+  // send message
+  let contactFrm = id('contactFrm');
+  let frmData = new FormData(contactFrm);
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(frmData).toString()
+  })
+  .then(() => {
+    // show confirmation message
+    const msg = query(document, '.msg-confirmation-container');
+    msg.classList.add('show');
+    console.log('Form submitted succesfully!');
 
-  // clear all input field
-  id('contactFrm').reset();
+    // clear all input field
+    id('contactFrm').reset();
+  })
+  .catch((error) =>  console.log(error));
 };
 
 // help close confirmation message on contact form
