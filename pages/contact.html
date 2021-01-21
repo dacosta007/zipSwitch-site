@@ -7,14 +7,19 @@
   <link rel="shortcut icon"  type="image/x-icon" href="/favicon-32x32.png">
   <link rel="stylesheet" href="/assets/css/themify-icons.css" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <style>
+    .navbar {
+      background: rgba(14, 19, 36, 0.5);
+    }
+  </style>
 </head>
 <body>
   <header class="">
     <nav class="navbar">
       <!-- site navigation brand -->
       <div class="navbar-brand">
-        <a href="#/">
-          <img src="../assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
+        <a href="/">
+          <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
           <span class="brand-name">HTD</span>
         </a>
         <!-- hambuger menu icon for small devices(show on smaller screens) -->
@@ -26,9 +31,9 @@
       <!-- right nav menu -->
       <div class="navbar-right" data-navbar-menu="navbar-menu">
         <a href="/">home</a>
-        <a href="docs.html">DOCS</a>
-        <a href="author.html">author</a>
-        <a href="contact.html">contact me</a>
+        <a href="#/pages/docs.html">DOCS</a>
+        <a href="/pages/author.html">author</a>
+        <a href="/pages/contact.html">contact me</a>
       </div>
     </nav>
   </header>
@@ -77,7 +82,7 @@
         <div class="contact-form-section">
           <h2 class="title center-text">send us a message</h2>
           <!-- Contact form -->
-          <form action="#" method="POST" onsubmit="confirmationMsg()" id="contactFrm">
+          <form name="contact" method="POST" data-netlify="true" onsubmit="confirmationMsg()" id="contactFrm">
             <div class="input-field">
               <input type="text" name="fullname" id="fullname" placeholder="your full name" required>
               <label for="fullname">full name</label>
@@ -133,8 +138,8 @@
       <div class="grid-container">
         <!-- the site brand name & crest/logo -->
         <div class="footer-brand">
-          <a href="../">
-            <img src="../assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
+          <a href="/">
+            <img src="/assets/images/site-logo.png" alt="site_brand_logo_or_crest" width="65" height="auto">
             <span class="brand-name">HTD<sup>&trade;</sup></span>
           </a>
           <div class="brand-fullname">
@@ -149,16 +154,16 @@
           <h5 class="footer-title">pages</h5>
           <ul class="footer-links">
             <li>
-              <a href="../">home</a>
+              <a href="/">home</a>
             </li>
             <li>
-              <a href="./docs.html">documentation</a>
+              <a href="#/pages/docs.html">documentation</a>
             </li>
             <li>
-              <a href="./about.html">about me</a>
+              <a href="/pages/author.html">about me</a>
             </li>
             <li>
-              <a href="./contact.html">contact me</a>
+              <a href="/pages/contact.html">contact me</a>
             </li>
           </ul>
         </div>
