@@ -192,7 +192,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Init small device navbar
-document.addEventListener('load', smallNav());git 
+document.addEventListener('load', smallNav());
 
 // Init images slide animation effects
 document.addEventListener('DOMContentLoaded', () => {
